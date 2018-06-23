@@ -19,7 +19,7 @@ Usage:
 
 Steps to perform ABE from scratch with your data:
 
-0) Copy time aligned NB and WB files in folders "./Speech_files/NB" and "./Speech_files/WB" respectively  
+0) Copy time aligned NB and WB files in folders "./Speech_files/NB" and "./Speech_files/WB" respectively
 
 1) Feature extraction :
      - Run the script "Feature_extraction.m" (available in folder "1_Feature_extraction") to extract NB (LogMFE) and HB (LPC) features
