@@ -11,7 +11,7 @@ License. To view a copy of this license, visit http://creativecommons.org/licens
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 For further details refer to following publication:
-P. Bachhav, M. Todisco, and N. Evans, “Exploiting explicit memory inclusion for artificial bandwidth extension,” in Proc. of IEEE Int. Conf. on Acoustics, Speech and Signal Processing (ICASSP), 2018, pp. 5459-63, Calgary, Canada.
+- P. Bachhav, M. Todisco, and N. Evans, “Exploiting explicit memory inclusion for artificial bandwidth extension,” in Proc. of IEEE Int. Conf. on Acoustics, Speech and Signal Processing (ICASSP), 2018, pp. 5459-63, Calgary, Canada.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

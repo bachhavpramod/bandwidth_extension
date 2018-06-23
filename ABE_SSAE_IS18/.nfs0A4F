@@ -11,7 +11,7 @@ License. To view a copy of this license, visit http://creativecommons.org/licens
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 For further details refer to following publication:
-P. Bachhav, M. Todisco, and N. Evans, "Artificial Bandwidth Extension with Memory Inclusion using Semi-supervised Stacked Auto-encoders", to appear in Proceedings of INTERSPEECH, Hyderabad, India.
+- P. Bachhav, M. Todisco, and N. Evans, "Artificial Bandwidth Extension with Memory Inclusion using Semi-supervised Stacked Auto-encoders", to appear in Proceedings of INTERSPEECH, Hyderabad, India.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
