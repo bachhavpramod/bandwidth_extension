@@ -25,16 +25,16 @@ Desctiption:
 
 2) Training of Semi-supervised Stacked Auto-encoder (SSAE)
      - Python script "SSAE.py" (available in folder - "2_SSAE_training) can be used to train a SSAE using the files (each for train, dev and test data) available in folder "1_Feature_extraction"
-     - The keras models are saved in folder "2_SSAE_training/your_models_SSAE" after training - Requirement - keras with theano backend (keras - 2.1.4, theano - 1.0.1 and python - 3.5.3)
-     - Download our already trained models from - https://drive.google.com/drive/folders/17dS8ZqFTjkF7u7iy_DCcN4Dk1cypOV-5?usp=sharing and copy them to the folder "2_SSAE_training/your_models_SSAE" 
+     - The keras models are saved in folder "2_SSAE_training/your_models_SSAE" after training 
+     - Requirement - keras with theano backend (keras - 2.1.4, theano - 1.0.1 and python - 3.5.3)
 
 3) GMM training :
      - Script "Build_GMM_SSAE.m" (available in "3_GMM_training") trains a gaussian mixture model (GMM) for joint vectors obtained from SSAE features and HB LP coefficients 
-     - The SSAE features for GMM modelling are extracted using the trained SSAE models available in folder "2_SSAE_training/models_SSAE"
+     - The SSAE features for GMM modelling are extracted using the existing trained SSAE models available in folder "2_SSAE_training/models_SSAE"
      - Choose the appropriate SSAE model name in script "Build_GMM_SSAE.m" for SSAE features extraction and subsequent GMM training
 
 Demo:
-4) "ABE_demo.m" (available in folder - "3_Extension") demonstrates the ABE using existing trained models
+4) Run the scipt "ABE_demo.m" (available in folder - "3_Extension") which demonstrates the ABE using already trained SSAE models
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
