@@ -54,6 +54,6 @@ For any query, please contact:
 
 - Pramod Bachhav (bachhav at eurecom dot fr)
 - Massimiliano Todisco (todisco at eurecom dot fr)
-- Nicholas Evans (evans at eurecom dotfr)
+- Nicholas Evans (evans at eurecom dot fr)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
