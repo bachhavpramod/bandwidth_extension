@@ -1,19 +1,19 @@
 Description:
 These folders contain MATLAB scripts to perform Artificial Bandwidth Extension (ABE) using explicit memory inclusion along with the two baselines.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Copyright (C) 2018 EURECOM, France.
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 For further details refer to following publication:
 P. Bachhav, M. Todisco, and N. Evans, “Exploiting explicit memory inclusion for artificial bandwidth extension,” in Proc. of IEEE Int. Conf. on Acoustics, Speech and Signal Processing (ICASSP), 2018, pp. 5459-63, Calgary, Canada.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Usage:
 
@@ -44,7 +44,7 @@ Mutual information:
    - Script "Build_GMM_Calculate_MI.m" (available in folder "MI") trains a GMM and calculates mutual information.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    
 Contact information
 ===================
@@ -55,4 +55,4 @@ For any query, please contact:
 - Massimiliano Todisco (todisco at eurecom dot fr)
 - Nicholas Evans (evans at eurecom dot fr)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -17,16 +17,15 @@ P. Bachhav, M. Todisco, and N. Evans, "Artificial Bandwidth Extension with Memor
 
 Desctiption:
 
-0) Folders "./Speech_files/NB" and "./Speech_files/WB" contain time aligned NB and WB files respectively  
+0) Folders "./Speech_files/NB" and "./Speech_files/WB" contain time aligned NB and WB files respectively
 
 1) Feature extraction :
-     - This folder should contain features extracted on 'train', 'dev' and 'test' data using the script                              "Feature_extraction.m" available in folder "./../ABE_explicit_memory_ICASSP18/1_Feature_extraction". See                      "./../ABE_explicit_memory_ICASSP18/Readme.txt" for more details
-     - Download the files from - https://drive.google.com/drive/folders/1Tj0VtCJygK05B28cbAGsyNyXzetDdqm5?usp=sharing and            copy them to this folder
+     - This folder should contain features extracted on 'train', 'dev' and 'test' data using the script "Feature_extraction.m" available in folder 	   "./..ABE_explicit_memory_ICASSP18/1_Feature_extraction". See "./../ABE_explicit_memory_ICASSP18/Readme.txt" for more details
+     - Download the files from - https://drive.google.com/drive/folders/1Tj0VtCJygK05B28cbAGsyNyXzetDdqm5?usp=sharing and copy them to this folder
 
 2) Training of Semi-supervised Stacked Auto-encoder (SSAE)
-     - Python script "SSAE.py" (available in folder - "2_SSAE_training) can be used to train a SSAE using the files (each for        train, dev and test data) available in folder "1_Feature_extraction"
-     - The keras models are saved in folder "2_SSAE_training/your_models_SSAE" after training
-     - Requirement - keras with theano backend (keras - 2.1.4, theano - 1.0.1 and python - 3.5.3)
+     - Python script "SSAE.py" (available in folder - "2_SSAE_training) can be used to train a SSAE using the files (each for train, dev and test data) available in 	    folder "1_Feature_extraction"
+     - The keras models are saved in folder "2_SSAE_training/your_models_SSAE" after training - Requirement - keras with theano backend (keras - 2.1.4, theano - 1.0.1 and python - 3.5.3)
      - Download our already trained models from - https://drive.google.com/drive/folders/17dS8ZqFTjkF7u7iy_DCcN4Dk1cypOV-5?          usp=sharing and copy them to the folder "2_SSAE_training/your_models_SSAE" 
 
 3) GMM training :
