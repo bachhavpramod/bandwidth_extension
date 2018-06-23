@@ -1,0 +1,48 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> Appying PCA
+>> >> >> >> >> >> >> Initialization = Random
+>> Inclusion of 3 past frames = and 3 future frames
+>> Number of frames = 1116530
+>> *******************************************************
+>> 
+>> >> >> >> Components = 128
+>> Size of Z = 20  1116530
+>> >> >>   iter	    log-likelihood
+     1	-3.54703e+07
+     2	-2.78238e+07
+     3	-2.69507e+07
+     4	-2.66808e+07
+     5	-2.65579e+07
+     6	-2.64901e+07
+     7	-2.64473e+07
+     8	-2.64166e+07
+     9	-2.63926e+07
+    10	-2.63732e+07
+    11	-2.63582e+07
+    12	 -2.6347e+07
+    13	-2.63387e+07
+    14	-2.63324e+07
+    15	-2.63271e+07
+    16	 -2.6323e+07
+    17	-2.63201e+07
+    18	 -2.6318e+07
+18 iterations, log-likelihood = -2.6318e+07
+>> finished
+>> 
+time =
+
+  816.6313
+
+>> >> >> >> >> >> 

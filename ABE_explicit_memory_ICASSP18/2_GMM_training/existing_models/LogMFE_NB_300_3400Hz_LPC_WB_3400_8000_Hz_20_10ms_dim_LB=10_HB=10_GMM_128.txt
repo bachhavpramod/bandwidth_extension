@@ -1,0 +1,34 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> Components = 128
+>> Numebr of frames = 1116536
+>> >> >> >>   iter	    log-likelihood
+     1	-2.87994e+07
+     2	-1.58618e+07
+     3	-1.54624e+07
+     4	-1.53369e+07
+     5	-1.52796e+07
+     6	-1.52485e+07
+     7	-1.52294e+07
+     8	-1.52179e+07
+     9	-1.52128e+07
+    10	-1.52127e+07
+10 iterations, log-likelihood = -1.52127e+07
+>> finished
+>> 
+time =
+
+  470.9730
+
+>> >> >> 
