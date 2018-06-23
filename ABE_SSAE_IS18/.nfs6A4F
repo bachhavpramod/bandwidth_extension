@@ -1,5 +1,5 @@
 Description:
-These folders contain scripts to perform Artificial Bandwidth Extension with memory inclusion using Semi-supervised Stacked Auto-encoders.
+- These folders contain scripts to perform Artificial Bandwidth Extension with memory inclusion using Semi-supervised Stacked Auto-encoders.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

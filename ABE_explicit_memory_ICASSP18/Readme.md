@@ -1,5 +1,5 @@
 Description:
-These folders contain MATLAB scripts to perform Artificial Bandwidth Extension (ABE) using explicit memory inclusion along with the two baselines.
+- These folders contain MATLAB scripts to perform Artificial Bandwidth Extension (ABE) using explicit memory inclusion along with the two baselines.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
