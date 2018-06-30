@@ -8,61 +8,60 @@ def load_data(l1, l2, feature):
     features = htk.HTKFile()
     
     if feature=='LogMFE':
-        path_train='./../1_Feature_extraction/'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_train'
-        path_dev='./../1_Feature_extraction/'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_dev'
-        path_test='./../1_Feature_extraction/'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_test'
-        path_TSP='./../1_Feature_extraction/TSP_'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10'
+        path_train1 = './../1_Feature_extraction/'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_train1'
+        path_train2 = './../1_Feature_extraction/'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_train2'
+        path_dev = './../1_Feature_extraction/'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_dev'
+        path_test = './../1_Feature_extraction/TSP_'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10'
         dimX=10
     
     if feature=='PS' or feature=='LPS':
-        path_train='./../1_Feature_extraction/PS'+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_train'
-        path_dev='./../1_Feature_extraction/PS'+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_dev'
-        path_test='./../1_Feature_extraction/PS_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_test'
-        path_TSP='./../1_Feature_extraction/TSP_PS_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10'
+        path_train1 = './../1_Feature_extraction/PS'+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_train1'
+        path_train2 = './../1_Feature_extraction/PS'+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_train2'
+        path_dev = './../1_Feature_extraction/PS_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_dev'
+        path_test = './../1_Feature_extraction/TSP_PS_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10'
         dimX=200
     
 
     # Load training data
-    features.load(path_train)
-    data1= np.asarray(features.data)  # featdim X number of frames
-    #Load dev data
+    features.load(path_train1)
+    data_train1= np.asarray(features.data)  # featdim X number of frames
+    features.load(path_train2)
+    data_train2= np.asarray(features.data)    
+    data_train= np.concatenate((data_train1,data_train2),axis=0)
+
+    # Load dev data
     features.load(path_dev)
-    data2= np.asarray(features.data)    
+    data_dev= np.asarray(features.data)
+
     # Load test data
     features.load(path_test)
-    data3= np.asarray(features.data)
-
-
-    data_train= np.concatenate((data1,data2),axis=0)
-    data_dev= data3
-    features.load(path_TSP)
     data_test= np.asarray(features.data)  # featdim X number of frames
    
     
-    X_train=data_train[:,0:dimX]
-    Y_train=data_train[:,dimX:] 
+    X_train = data_train[:,0:dimX]
+    Y_train = data_train[:,dimX:] 
 
-    X_dev=data_dev[:,0:dimX]
-    Y_dev=data_dev[:,dimX:]
+    X_dev = data_dev[:,0:dimX]
+    Y_dev = data_dev[:,dimX:]
 
-    X_test=data_test[:,0:dimX]
-    Y_test=data_test[:,dimX:]
+    X_test = data_test[:,0:dimX]
+    Y_test = data_test[:,dimX:]
         
     if feature=='LPS':
         print('Log is applied')
-        X_train=np.log(np.abs(X_train))
-        X_test=np.log(np.abs(X_test))
-        X_dev=np.log(np.abs(X_dev))
+        X_train = np.log(np.abs(X_train))
+        X_test = np.log(np.abs(X_test))
+        X_dev = np.log(np.abs(X_dev))
         
 # Apply mean-variance normalisation on training data    
     sX_train = scale(X_train, axis = 0) 
     sY_train = scale(Y_train, axis = 0) 
 
 # Get means and variances from training data
-    mean_trainX=X_train.mean(axis=0)
-    std_trainX=X_train.std(axis=0)   
-    mean_trainY=Y_train.mean(axis=0)
-    std_trainY=Y_train.std(axis=0)
+    mean_trainX = X_train.mean(axis=0)
+    std_trainX = X_train.std(axis=0)   
+    mean_trainY = Y_train.mean(axis=0)
+    std_trainY = Y_train.std(axis=0)
      
 # Normalize dev and test data
     sX_dev=(X_dev-mean_trainX)/std_trainX

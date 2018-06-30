@@ -24,7 +24,7 @@ Desctiption:
      - Download the files from - https://drive.google.com/drive/folders/1Tj0VtCJygK05B28cbAGsyNyXzetDdqm5?usp=sharing and copy them to the folder "1_Feature_extraction"
 
 2) Training of Semi-supervised Stacked Auto-encoder (SSAE)
-     - Python script "SSAE.py" (available in folder - "2_SSAE_training) can be used to train a SSAE using the files (each for train, dev and test data) available in folder "1_Feature_extraction"
+     - Python script "SSAE.py" (available in folder - "2_SSAE_training) can be used to train a SSAE using the files available in folder "1_Feature_extraction"
      - The keras models are saved in folder "2_SSAE_training/your_models_SSAE" after training 
      - Requirement - keras with theano backend (keras - 2.1.4, theano - 1.0.1 and python - 3.5.3)
 

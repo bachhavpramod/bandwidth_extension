@@ -27,8 +27,8 @@ modelpath='./your_models_SSAE/'
 if not os.path.exists(modelpath):
     os.makedirs(modelpath) 
     
-#feature='LPS'
-feature = 'LogMFE'    
+feature='LPS'
+#feature = 'LogMFE'    
 print('Feature used is {}'.format(feature))
 
 print( 'Loading data...')
@@ -38,9 +38,9 @@ print('Data loaded')
 
 ###############################################
 # Configurations - for logMFE
-pDrop = 0.2; BN = 0 # Fraction of the input units to drop.
+#pDrop = 0.2; BN = 0 # Fraction of the input units to drop.
 #pDrop=0; BN='a'
-#pDrop=0; BN='b'
+pDrop=0; BN='b'
 #pDrop=0; BN=0
 #HL=[512,256,10,256,512]
 HL = [1024,512,10,512,1024]
@@ -57,13 +57,13 @@ activations = ['tanh','tanh','tanh','tanh','tanh','linear']; act='tttttl'
 
 ################# Training parameters #################
 
-ep=1  # number of epochs
-optimizer='adam'; LR=0.001 # learning rate  
-patience=1; reduce_lr_factor=0.5; min_LR=0.00001  # parameters for callback ReduceLROnPlateau
-bs=512 # batch_size
-shuff=True
+ep = 1  # number of epochs
+optimizer = 'adam'; LR=0.001 # learning rate  
+patience = 1; reduce_lr_factor = 0.5; min_LR = 0.00001  # parameters for callback ReduceLROnPlateau
+bs = 512 # batch_size
+shuff = True
 
-initializer=keras.initializers.he_normal(seed=7); init='he_n'
+initializer = keras.initializers.he_normal(seed=7); init='he_n'
 loss='mse'
 
 ##################################
