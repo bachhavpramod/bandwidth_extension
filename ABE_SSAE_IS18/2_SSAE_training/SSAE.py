@@ -20,8 +20,8 @@ import my_functions
 import numpy as np
 import os
 
-l1=2
-l2=2
+l1 = 2
+l2 = 2
 modelpath='./your_models_SSAE/' 
 
 if not os.path.exists(modelpath):
@@ -37,27 +37,20 @@ inp_train, inp_dev, inp_test, op_reg_train, op_reg_dev, op_reg_test, feat_dim_X,
 print('Data loaded') 
 
 ###############################################
-# Configurations - for logMFE
+# Configurations
 #pDrop = 0.2; BN = 0 # Fraction of the input units to drop.
-#pDrop=0; BN='a'
-pDrop=0; BN='b'
-#pDrop=0; BN=0
-#HL=[512,256,10,256,512]
+#pDrop = 0; BN = 'a'
+pDrop = 0; BN = 'b'
+#pDrop = 0; BN = 0
+#HL = [512,256,10,256,512]
 HL = [1024,512,10,512,1024]
 
 activations = ['tanh','tanh','tanh','tanh','tanh','linear']; act='tttttl'
 #activations=['relu','relu','relu','relu','relu','linear']; act='rrrrrl'
 
-#################
-## Configurations - for LPS
-#activations=['tanh','tanh','tanh','tanh','tanh','linear']; act='tttttl'
-#pDrop=0; BN='b'
-##HL=[1024,512,10,512,1024]
-#HL=[512,256,10,256,512]
-
 ################# Training parameters #################
 
-ep = 1  # number of epochs
+ep = 30  # number of epochs
 optimizer = 'adam'; LR=0.001 # learning rate  
 patience = 1; reduce_lr_factor = 0.5; min_LR = 0.00001  # parameters for callback ReduceLROnPlateau
 bs = 512 # batch_size
