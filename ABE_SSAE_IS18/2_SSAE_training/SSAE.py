@@ -5,7 +5,7 @@
 # 
 #    P.Bachhav, M. Todisco and N. Evans, "Artificial Bandwidth Extension 
 #    with Memory Inclusion using Semi-supervised Stacked Auto-encoders", 
-#    to appear in Proceedings of INTERSPEECH, Hyderabad, India.
+#    in Proc. of INTERSPEECH, 2018, pp.1185–1189, Hyderabad, India.
 # 
 #   Acknowledgements : thanks to the following links and many others 
 #    https://keras.io/getting-started/functional-api-guide/

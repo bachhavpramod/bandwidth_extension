@@ -104,7 +104,7 @@ LPF = load('./../../Filters/LPF_7700_8300.mat'); dLPF=(length(LPF.h_n)+1)/2;
 %%  Analysis and synthesis window which satisfies the OLA constraint
     wPR = hanning(winlen,'periodic')'; K = sum(wPR)/shift; win = sqrt(wPR/K);   
     
-for loop = 1 :length(paths_to_files_NB)
+for loop = 1:length(paths_to_files_NB)
 
 %% Read files
     [nb, Fs8] = audioread([paths_to_files_NB{loop,1},'_NB.wav']); nb = nb(:,1)';
