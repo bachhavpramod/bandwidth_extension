@@ -24,7 +24,7 @@ ____________________________________________________________________________
     
 4) ABE_CVAE_ICASSP19
     * This package contains scripts to perform ABE with latent features obtained using a deep generative model based approach presented in the following publication:
-[P. Bachhav, M. Todisco, and N. Evans, "Latent Representation Learning for Artificial  Bandwidth Extension using a Conditional Variational Auto-Encoder", accepted in ICASSP 2019. ]()
+[P. Bachhav, M. Todisco, and N. Evans, "Latent Representation Learning for Artificial  Bandwidth Extension using a Conditional Variational Auto-Encoder", accepted in ICASSP 2019. ](http://www.eurecom.fr/fr/publication/5817/download/sec-publi-5817.pdf)
     * Refer "Readme.txt" in folder "ABE_CVAE_ICASSP19" for further details
 	
 4) utilities
@@ -37,6 +37,7 @@ ____________________________________________________________________________
     * This folder contains usage examples of some functions available in folder "utilities"
 
 ____________________________________________________________________________
+
 All the scripts are successfully tested on MATLAB 2018a
 ____________________________________________________________________________
 

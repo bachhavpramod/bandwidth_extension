@@ -65,8 +65,8 @@ WB = WB(l:end-l);
 
 %%
 figure;    
-k=5;
-a=200;b=50;
+k = 5;
+a = 200; b = 50;
 bx(1)=subplot(k,1,1);
 specgram(NB,[],Fs16/2)
 title('Spectrogram of NB speech (Fs=8Khz)')

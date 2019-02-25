@@ -1,3 +1,5 @@
+# A keras script to train a semi-supervised stacked auto-encoder (SSAE)
+# 
 # Written by Pramod Bachhav, June 2018
 # Contact : bachhav[at]eurecom[dot]fr, bachhavpramod[at]gmail[dot]com
 #

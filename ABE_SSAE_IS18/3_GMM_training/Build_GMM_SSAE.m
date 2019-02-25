@@ -43,10 +43,10 @@ path='./../1_Feature_extraction/';
 data1 = readhtk([path,filename,'_train']); % one frame per row
 data2 = readhtk([path,filename,'_dev']); % one frame per row
 data3 = readhtk([path,filename,'_test']); % one frame per row
-data_test = readhtk([path,'TSP_',filename]); % one frame per row
 
 data_train = [data1; data2];
 data_dev = data3;
+data_test = readhtk([path,'TSP_',filename]); % one frame per row
 
 clear data1 data2 data3
 

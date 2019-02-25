@@ -7,21 +7,22 @@ def load_data(l1, l2, feature):
   
     features = htk.HTKFile()
     
+    path = './../1_Feature_extraction/'
+    
     if feature=='LogMFE':
-        path_train1 = './../1_Feature_extraction/'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_train1'
-        path_train2 = './../1_Feature_extraction/'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_train2'
-        path_dev = './../1_Feature_extraction/'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_dev'
-        path_test = './../1_Feature_extraction/TSP_'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10'
+        path_train1 = path+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_train1'
+        path_train2 = path+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_train2'
+        path_dev = path+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10_dev'
+        path_test = path+'TSP_'+feature+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=10_HB=10'
         dimX=10
     
     if feature=='PS' or feature=='LPS':
-        path_train1 = './../1_Feature_extraction/PS'+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_train1'
-        path_train2 = './../1_Feature_extraction/PS'+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_train2'
-        path_dev = './../1_Feature_extraction/PS_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_dev'
-        path_test = './../1_Feature_extraction/TSP_PS_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10'
+        path_train1 = path+'PS'+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_train1'
+        path_train2 = path+'PS'+'_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_train2'
+        path_dev = path+'PS_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10_dev'
+        path_test = path+'TSP_PS_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=200_HB=10'
         dimX=200
     
-
     # Load training data
     features.load(path_train1)
     data_train1= np.asarray(features.data)  # featdim X number of frames
