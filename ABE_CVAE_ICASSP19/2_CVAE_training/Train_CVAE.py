@@ -1,3 +1,8 @@
+# A keras script to train a conditional variational auto-encoder (CVAE)
+# with a conditioning variable optimised via an auxillary neural network.
+# The conditioning network is further used for dimensionality reduction 
+# to perform Artificial bandwidth extension using GMM regression. 
+#
 # Written by Pramod Bachhav, Aug 2018
 # Contact : bachhav[at]eurecom[dot]fr, bachhavpramod[at]gmail[dot]com
 #
@@ -9,7 +14,6 @@
 # 
 #   Acknowledgements : 
 #
-#   Thanks to the following links and many others 
 #     https://github.com/twolffpiggott/autoencoders/blob/master/autoencoders.py#L34
 #     https://tiao.io/post/tutorial-on-variational-autoencoders-with-a-concise-keras-implementation/
 #
@@ -19,8 +23,8 @@
 #     Better version => 
 #     https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py
 #
-#    A very nice understanding about Kingma's papers on VAE
-#     http://bjlkeng.github.io/posts/variational-autoencoders/
+#    A very nice understanding about Kingma's papers on VAE at
+#     [http://bjlkeng.github.io/posts/variational-autoencoders/](http://bjlkeng.github.io/posts/variational-autoencoders/)
     
 ##############################################################################################
 
