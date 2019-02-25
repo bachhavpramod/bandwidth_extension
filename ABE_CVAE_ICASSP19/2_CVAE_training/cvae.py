@@ -206,8 +206,7 @@ class VAE(object):
 #                    model.add(BatchNormalization())
 #                model.add(Activation(self.activations[i-1]))              
 #                if self.BN=='a':
-#                    model.add(BatchNormalization())
-#                    
+#                    model.add(BatchNormalization())                   
 #                if i is len(L)-1:     
 #                    model.add(Activation(self.activations[i-1],  name = last_layer_name))              
 #                if self.BN=='a':

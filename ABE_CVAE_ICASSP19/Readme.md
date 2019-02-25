@@ -1,3 +1,6 @@
+# Latent Representation Learning for Artificial Bandwidth Extension (ABE) using a Conditional Variational Auto-encoder (CVAE)
+____________________________________________________________________________
+
 # Description:
 These folders contain scripts to perform dimensionality reduction (DR)/ feature extraction using conditional variational auto-encoder (CVAE) and perform artificial bandwidth extension using [GMM regression](https://github.com/bachhavpramod/bandwidth_extension/blob/master/utilities/GMMR.m). 
 ____________________________________________________________________________

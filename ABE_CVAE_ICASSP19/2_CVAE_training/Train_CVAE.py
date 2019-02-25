@@ -19,12 +19,12 @@
 #
 #     https://blog.keras.io/building-autoencoders-in-keras.html
 #        - Here, note that KL loss definition has a minor mistake - 
-#        - KL-loss = -0.5 K.sum .... instead of KL-loss = -0.5 K.sum
-#     Better version => 
+#        - It should be KL-loss = -0.5 K.sum() .... instead of KL-loss = -0.5 K.mean()
+#     Better version can be found at => 
 #     https://github.com/keras-team/keras/blob/master/examples/variational_autoencoder.py
 #
-#    A very nice understanding about Kingma's papers on VAE at
-#     [http://bjlkeng.github.io/posts/variational-autoencoders/](http://bjlkeng.github.io/posts/variational-autoencoders/)
+#    A very nice understanding about Kingma's papers on VAE at 
+#     http://bjlkeng.github.io/posts/variational-autoencoders/
     
 ##############################################################################################
 

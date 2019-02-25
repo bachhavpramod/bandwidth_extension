@@ -1,3 +1,6 @@
+# Efficient super-wide bandwidth extension (SWBE) using linear prediction based analysis synthesis (LPAS)
+____________________________________________________________________________
+
 # Description:
 - This folder contains MATLAB scripts to perform super-wide bandwidth extension (SWBE) using linear prediction based analysis-synthesis.
 ____________________________________________________________________________
