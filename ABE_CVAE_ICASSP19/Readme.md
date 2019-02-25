@@ -1,7 +1,7 @@
 # Description:
 These folders contain scripts to perform dimensionality reduction (DR)/ feature extraction using conditional variational auto-encoder (CVAE) and perform artificial bandwidth extension using [GMM regression](https://github.com/bachhavpramod/bandwidth_extension/blob/master/utilities/GMMR.m). 
 ____________________________________________________________________________
-Copyright (C) 2018 EURECOM, France.
+Copyright (C) 2019 EURECOM, France.
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -22,9 +22,9 @@ ____________________________________________________________________________
 2) Training of variational auto-encoder (VAE) and conditional VAE (CVAE) for feature extraction 
      - Python script "Train_CVAE.py" (available in folder - "2_CVAE_training) can be used to train VAE and CVAE using the data files available in folder "1_Feature_extraction"
      - The keras models are saved in folder "2_CVAE_training/your_models_CVAE" after training 
-     - Code successfully tested on - keras with tensorflow (TF) backend (keras - 2.2.4, tensorflow-gpu - 1.10.0 and python - 3.6.7). Note that it is important to train models with TF backend, as models are loaded in MATLAB after training using MATLAB add-on [importKerasNetwork](https://fr.mathworks.com/help/deeplearning/ref/importkerasnetwork.html;jsessionid=f4ae65d98620b0cc0675f9c3cd38)
+     - Code successfully tested on - keras with tensorflow (TF) backend (keras - 2.2.4, tensorflow-gpu - 1.12.0 and python - 3.6.7). Note that it is important to train models with TF backend, as models are loaded in MATLAB after training, using MATLAB add-on [importKerasNetwork](https://fr.mathworks.com/help/deeplearning/ref/importkerasnetwork.html;jsessionid=f4ae65d98620b0cc0675f9c3cd38)
       - Script 'Train_SAE.py' trains a conventional stacked auto-encoder (SAE) without pretraining for baseline
-      - SSAE baseline can be trained using [script](https://github.com/bachhavpramod/bandwidth_extension/blob/master/ABE_SSAE_IS18/2_SSAE_training/SSAE.py)
+      - SSAE baseline can be trained using script [SSAE.py](https://github.com/bachhavpramod/bandwidth_extension/blob/master/ABE_SSAE_IS18/2_SSAE_training/SSAE.py)
 
 3) GMM training :
      - DR is applied to high-dimensional log-spectral data to get lower dimensional features to train a GMM for ABE.
@@ -33,7 +33,7 @@ ____________________________________________________________________________
      - Use the scripts 'Build_GMM_PCA.m', 'Build_GMM_SAE.m' and [Build_GMM_SSAE.m](https://github.com/bachhavpramod/bandwidth_extension/blob/master/ABE_SSAE_IS18/3_GMM_training/Build_GMM_SSAE.m) for DR using principal component analysis (PCA), SAE and SSAE respectively.   
 
 # Demo:
-4) Run the scipt "ABE_demo.m" (available in folder - "4_Extension") which demonstrates the ABE using DR techniques, CVAE, SAE, SSAE and PCA. Aseesessment of different artificially extended speech signals is presented using metrics,  RMS-LSD and COSH distance measures and MOS-LQO.
+4) Run the scipt "ABE_demo.m" (available in folder - "4_Extension") which demonstrates the ABE using DR techniques, CVAE, SAE, SSAE and PCA. Aseesessment of different artificially extended speech signals is performed using metrics,  RMS-LSD and COSH distance measures and MOS-LQO.
 ____________________________________________________________________________
 # Contact information
 
