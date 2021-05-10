@@ -106,7 +106,7 @@ HPF = load('HPF_3300_3400.mat'); dHPF=(length(HPF.h_n)+1)/2;
     shift_wb = wlen_wb/2;
       
     lp_order_nb = dimY-1; % for LB=16, 1 is energy coeff, 14 are LPCs. We get X in this code by concatenating gain with LPCs    
-    if strcmp(inp_feature,'LogMFE_mem_delta');
+    if strcmp(inp_feature,'LogMFE_mem_delta')
         lp_order_wb=2*(dimX+dimY)-1;  
     else
         lp_order_wb=2*lp_order_nb+1;
