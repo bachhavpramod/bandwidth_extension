@@ -202,7 +202,7 @@ for frame = 1: Nframes
     if fig==1
         frameWB1=WB(indexWB);
         if length(frameWB1==0)==length(frameWB1)
-            frameWB1=frameWB1+eps;
+            frameWB1=random('Normal', 0, eps, size(frameWB1));
         end    
         frameWB(:,frame) = frameWB1.*win_wb';  
         
