@@ -61,7 +61,7 @@ stdev = [];
 comp = 128;
 filename=['LogMFE_NB_300_3400Hz_LPC_WB_3400_8000_Hz_20_10ms_dim_LB=',num2str(dimX),'_HB=',num2str(dimY),'_GMM_',num2str(comp)];
 if strcmp(inp_feature,'LogMFE_zs_pca')
-    disp('Performing ABE using the proposed approach')    
+    %disp('Performing ABE using the proposed approach')    
     GMMfile=[filename,'_','zs_pca_',num2str(past_frames),'_',num2str(future_frames)]; dimX_mem=(past_frames+future_frames+1)*dimX;
 elseif strcmp(inp_feature,'LogMFE')
     disp('Performing ABE using basline B1')
@@ -92,8 +92,8 @@ apriory_prob = obj.PComponents;
 gmmr = offline_param(apriory_prob,comp_means,comp_variance,dim);
 
 %% Load filters
-LPF = load('./../../Filters/LPF_7700_8300.mat'); dLPF=(length(LPF.h_n)+1)/2;
-HPF = load('./../../Filters/HPF_3300_3400.mat'); dHPF=(length(HPF.h_n)+1)/2;
+LPF = load('LPF_7700_8300.mat'); dLPF=(length(LPF.h_n)+1)/2;
+HPF = load('HPF_3300_3400.mat'); dHPF=(length(HPF.h_n)+1)/2;
 
 %% Parameters
     Fs8=8000; 
@@ -106,7 +106,7 @@ HPF = load('./../../Filters/HPF_3300_3400.mat'); dHPF=(length(HPF.h_n)+1)/2;
     shift_wb = wlen_wb/2;
       
     lp_order_nb = dimY-1; % for LB=16, 1 is energy coeff, 14 are LPCs. We get X in this code by concatenating gain with LPCs    
-    if strcmp(inp_feature,'LogMFE_mem_delta');
+    if strcmp(inp_feature,'LogMFE_mem_delta')
         lp_order_wb=2*(dimX+dimY)-1;  
     else
         lp_order_wb=2*lp_order_nb+1;
@@ -188,7 +188,7 @@ for frame = 1: Nframes
     
     frameNB= NB(indexNB);
     if length(find(frameNB==0)) == length(frameNB)
-       frameNB = frameNB+eps;
+       frameNB = random('Normal', 0, eps, size(frameNB));
     end    
 
 %% Upsample NB speech frame    
@@ -202,7 +202,7 @@ for frame = 1: Nframes
     if fig==1
         frameWB1=WB(indexWB);
         if length(frameWB1==0)==length(frameWB1)
-            frameWB1=frameWB1+eps;
+            frameWB1=random('Normal', 0, eps, size(frameWB1));
         end    
         frameWB(:,frame) = frameWB1.*win_wb';  
         
